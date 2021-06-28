@@ -68,7 +68,7 @@ namespace Swashbuckle.Demo
             app.UseSwaggerUI(options =>
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "Swashbuckle Demo API");
-                options.RoutePrefix = "";
+                //options.RoutePrefix = "";
             });
         }
     }

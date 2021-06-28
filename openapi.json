@@ -1,0 +1,80 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+      "title": "Swashbuckle Demo API",
+      "description": "Demo API for showing Swashbuckle.",
+      "version": "v1"
+    },
+    "paths": {
+      "/WeatherForecast": {
+        "get": {
+          "tags": [
+            "WeatherForecast"
+          ],
+          "summary": "A GET method that returns fake weather.",
+          "responses": {
+            "200": {
+              "description": "Success",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/WeatherForecast"
+                    }
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/WeatherForecast"
+                    }
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/WeatherForecast"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "WeatherForecast": {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string",
+              "description": "Date for the weather.",
+              "format": "date-time"
+            },
+            "temperatureC": {
+              "type": "integer",
+              "description": "Temperature in degrees Celsius.",
+              "format": "int32"
+            },
+            "temperatureF": {
+              "type": "integer",
+              "description": "Temperature in degrees Farenheit.",
+              "format": "int32",
+              "readOnly": true
+            },
+            "summary": {
+              "type": "string",
+              "description": "A Summary.",
+              "nullable": true
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  }

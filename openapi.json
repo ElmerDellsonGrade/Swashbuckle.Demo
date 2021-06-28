@@ -5,6 +5,9 @@
       "description": "Demo API for showing Swashbuckle.",
       "version": "v1"
     },
+    "servers": {
+      "url": "https://develop.luvit.se/LuvitApi/v1"
+    },
     "paths": {
       "/WeatherForecast": {
         "get": {

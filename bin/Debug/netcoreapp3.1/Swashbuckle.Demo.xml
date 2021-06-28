@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Swashbuckle.Demo</name>
+    </assembly>
+    <members>
+        <member name="T:Swashbuckle.Demo.Controllers.WeatherForecastController">
+            <summary>
+            Weather Controller used for GET/POST. 
+            </summary>
+        </member>
+        <member name="M:Swashbuckle.Demo.Controllers.WeatherForecastController.Get">
+            <summary>
+            A GET method that returns fake weather.
+            </summary>
+            <returns>An array of fake weather forecasts.</returns>
+        </member>
+        <member name="P:Swashbuckle.Demo.WeatherForecast.Date">
+            <summary>
+            Date for the weather.
+            </summary>
+        </member>
+        <member name="P:Swashbuckle.Demo.WeatherForecast.TemperatureC">
+            <summary>
+            Temperature in degrees Celsius.
+            </summary>
+        </member>
+        <member name="P:Swashbuckle.Demo.WeatherForecast.TemperatureF">
+            <summary>
+            Temperature in degrees Farenheit.
+            </summary>
+        </member>
+        <member name="P:Swashbuckle.Demo.WeatherForecast.Summary">
+            <summary>
+            A Summary.
+            </summary>
+        </member>
+    </members>
+</doc>
